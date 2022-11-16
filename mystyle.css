@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;   
+    text-transform: uppercase;
+}
+
+button {
+    height: 60px;
+    font-size: 2rem!important;
+}
+
+button:hover {
+  color: white!important;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+
+.number-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+
+.equals-btn {  
+    grid-column-start:3;
+    grid-column-end: 5;
+}
+
+.equals-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+
+.clear-btn{
+    grid-column-start:1;
+    grid-column-end: 3;
+}
+
+.clear-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+  .dot-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+  .operator-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+  
+  .delete-btn:hover {
+    background-color: rgb(7, 1, 1);
+    border-color: rgb(214, 21, 21);
+    cursor: pointer;
+  }
+
+.calculator {  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;  
+}
+ 
+.screen {
+    width: 92%;
+    height: 80px;
+    border: none;
+    background-color: hwb(0 4% 96%);
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 4rem;
+  }

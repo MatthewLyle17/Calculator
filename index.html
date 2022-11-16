@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title data-cy="title">Calculator Team 1</title>
+	
+    	<!-- Bootstrap CSS --> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">	
+	<!-- Custom CSS -->	
+	<link href="mystyle.css" rel = "stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1 data-cy="page-heading">Calculator</h1>
+	<!-- Calculator -->
+	<div class="calculator">
+		<!-- Calculator display -->
+		<div class="screen" data-cy="screen"><span id="disp" class="display"></span></div>
+		<!-- ./ Calculator display -->
+		
+		<!-- Calculator keys -->
+		<div class="calculator-keys">       
+			<button class="clear-btn" value="clear" data-cy="clear-btn">CE</button>
+			<button class="delete-btn" value="delete" data-cy="delete-button">DEL</button>
+			<button id="/" class="operator-btn" value="divide" data-cy="divide-btn" data-group="operator-btn">&divide;</button>
+
+			<button id="7" class="number-btn" value="7" data-cy="7-btn" data-group="number-btn">7</button>
+			<button id="8" class="number-btn" value="8" data-cy="8-btn" data-group="number-btn">8</button> 
+			<button id="9" class="number-btn" value="9" data-cy="9-btn" data-group="number-btn">9</button>
+			<button id="*" class="operator-btn" value="multiply" data-cy="times-btn" data-group="operator-btn">&times;</button>
+
+			<button id="4" class="number-btn" value="4" data-cy="4-btn" data-group="number-btn">4</button> 
+			<button id="5" class="number-btn" value="5" data-cy="5-btn" data-group="number-btn">5</button>
+			<button id="6" class="number-btn" value="6" data-cy="6-btn" data-group="number-btn">6</button>
+			<button id="+" class="operator-btn" value="add" data-cy="plus-btn" data-group="operator-btn">+</button>
+          
+			<button id="1" class="number-btn" value="1" data-cy="1-btn" data-group="number-btn">1</button>
+			<button id="2" class="number-btn" value="2" data-cy="2-btn" data-group="number-btn">2</button> 
+			<button id="3" class="number-btn" value="3" data-cy="3-btn" data-group="number-btn">3</button>
+			<button id="-" class="operator-btn" value="subtract" data-cy="minus-btn" data-group="operator-btn">-</button>
+
+			<button id="." class="dot-btn" value="." data-cy=".-btn" data-group="number-btn">.</button>
+			<button id="0" class="number-btn" value="0" data-cy="0-btn" data-group="number-btn">0</button>
+			<button id="=" class="equals-btn" value="equals" data-cy="equals-btn">=</button>
+		</div>
+        	<!-- ./ Calculator keys -->
+	</div>
+	<!-- ./ Calculator -->
+	
+	<!-- Custom JS -->
+	<script src="myscript.js"></script>
+</body>
+</html>
